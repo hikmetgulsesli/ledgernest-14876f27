@@ -1,0 +1,86 @@
+{
+  "clients": [
+    {
+      "id": "c1",
+      "name": "Acme Design",
+      "company": "Acme Design Studio",
+      "email": "billing@acme.example",
+      "address": "123 Business Rd, Suite 100",
+      "city": "Metropolis",
+      "zip": "10001",
+      "status": "active",
+      "balance": 2450,
+      "createdAt": "2026-01-15T10:00:00Z"
+    },
+    {
+      "id": "c2",
+      "name": "Beta Corp",
+      "company": "Beta Corp",
+      "email": "ap@beta.example",
+      "address": "456 Commerce St",
+      "city": "Gotham",
+      "zip": "10002",
+      "status": "on-hold",
+      "balance": 1200,
+      "createdAt": "2026-02-10T10:00:00Z"
+    },
+    {
+      "id": "c3",
+      "name": "Gamma Freelance",
+      "company": "",
+      "email": "hello@gamma.example",
+      "address": "789 Market Ave",
+      "city": "Star City",
+      "zip": "10003",
+      "status": "inactive",
+      "balance": 0,
+      "createdAt": "2026-03-05T10:00:00Z"
+    }
+  ],
+  "expenses": [
+    {
+      "id": "e1",
+      "description": "Office software subscription",
+      "amount": 49.99,
+      "date": "2026-03-01",
+      "category": "software"
+    }
+  ],
+  "activityEvents": [
+    {
+      "id": "a1",
+      "type": "created",
+      "message": "Client Acme Design created",
+      "timestamp": "2026-01-15T10:00:00Z"
+    },
+    {
+      "id": "a2",
+      "type": "updated",
+      "message": "Client Beta Corp status set to On Hold",
+      "timestamp": "2026-02-12T10:00:00Z"
+    },
+    {
+      "id": "a3",
+      "type": "expense",
+      "message": "Expense 'Office software subscription' added",
+      "timestamp": "2026-03-01T10:00:00Z"
+    }
+  ],
+  "preferences": {
+    "defaultView": "list",
+    "notifications": true,
+    "density": "comfortable"
+  },
+  "savedFilters": [
+    {
+      "id": "f1",
+      "label": "Active only",
+      "criteria": { "status": "active" }
+    },
+    {
+      "id": "f2",
+      "label": "Has balance",
+      "criteria": { "minBalance": 1 }
+    }
+  ]
+}
