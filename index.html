@@ -8,12 +8,12 @@
   </head>
   <body>
     <main data-setfarm-root="baseline" data-testid="setfarm-app-root" class="app-shell">
-      <section class="hero">
-        <p class="eyebrow">Setfarm Static HTML</p>
-        <h1>LedgerNest</h1>
-        <p class="summary">Baseline static page ready for plain HTML, CSS, and JavaScript implementation.</p>
-      </section>
+      <header id="app-header" class="app-header"></header>
+      <div id="app-main" class="app-main"></div>
     </main>
+    <div id="app-toast" class="app-toast" aria-live="polite"></div>
+    <script src="assets/js/ledgernest.storage.js" defer></script>
+    <script src="assets/js/ledgernest.state.js" defer></script>
     <script src="assets/js/app.js" defer></script>
     <script src="assets/js/test-bridge.js" defer></script>
   </body>
