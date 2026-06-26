@@ -1,0 +1,870 @@
+[
+  {
+    "screenId": "312505334abc4c858faf55476d8c1960",
+    "screenTitle": "Client Editor - LedgerNest",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Clients",
+        "href": "#",
+        "line": 122
+      },
+      {
+        "type": "button",
+        "label": "Go back",
+        "line": 117
+      },
+      {
+        "type": "button",
+        "label": "Cancel",
+        "line": 133
+      },
+      {
+        "type": "button",
+        "label": "Save Client",
+        "line": 136
+      },
+      {
+        "type": "input",
+        "label": "text",
+        "inputType": "text",
+        "line": 157
+      },
+      {
+        "type": "input",
+        "label": "Optional",
+        "inputType": "text",
+        "placeholder": "Optional",
+        "line": 163
+      },
+      {
+        "type": "input",
+        "label": "email",
+        "inputType": "email",
+        "line": 171
+      },
+      {
+        "type": "input",
+        "label": "123 Business Rd, Suite 100",
+        "inputType": "text",
+        "placeholder": "123 Business Rd, Suite 100",
+        "line": 191
+      },
+      {
+        "type": "input",
+        "label": "Metropolis",
+        "inputType": "text",
+        "placeholder": "Metropolis",
+        "line": 198
+      },
+      {
+        "type": "input",
+        "label": "10001",
+        "inputType": "text",
+        "placeholder": "10001",
+        "line": 204
+      },
+      {
+        "type": "form",
+        "label": "form",
+        "line": 144
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Clients",
+        "href": "#",
+        "line": 122
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Go back",
+        "line": 117
+      },
+      {
+        "type": "button",
+        "label": "Cancel",
+        "line": 133
+      },
+      {
+        "type": "button",
+        "label": "Save Client",
+        "line": 136
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "text",
+        "inputType": "text",
+        "line": 157
+      },
+      {
+        "type": "input",
+        "label": "Optional",
+        "inputType": "text",
+        "placeholder": "Optional",
+        "line": 163
+      },
+      {
+        "type": "input",
+        "label": "email",
+        "inputType": "email",
+        "line": 171
+      },
+      {
+        "type": "input",
+        "label": "123 Business Rd, Suite 100",
+        "inputType": "text",
+        "placeholder": "123 Business Rd, Suite 100",
+        "line": 191
+      },
+      {
+        "type": "input",
+        "label": "Metropolis",
+        "inputType": "text",
+        "placeholder": "Metropolis",
+        "line": 198
+      },
+      {
+        "type": "input",
+        "label": "10001",
+        "inputType": "text",
+        "placeholder": "10001",
+        "line": 204
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 11,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "721fa6fb775a480783d377c73a81387c",
+    "screenTitle": "Insights - LedgerNest",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "dashboard",
+        "href": "#",
+        "line": 126
+      },
+      {
+        "type": "link",
+        "label": "Clients",
+        "href": "#",
+        "line": 131
+      },
+      {
+        "type": "link",
+        "label": "Invoices",
+        "href": "#",
+        "line": 136
+      },
+      {
+        "type": "link",
+        "label": "insights",
+        "href": "#",
+        "line": 141
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 146
+      },
+      {
+        "type": "button",
+        "label": "Create New",
+        "line": 121
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 163
+      },
+      {
+        "type": "button",
+        "label": "help_outline",
+        "line": 166
+      },
+      {
+        "type": "button",
+        "label": "Add Expense",
+        "line": 169
+      },
+      {
+        "type": "button",
+        "label": "Filter",
+        "line": 184
+      },
+      {
+        "type": "button",
+        "label": "Export",
+        "line": 187
+      },
+      {
+        "type": "button",
+        "label": "Send Reminder",
+        "line": 238
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "dashboard",
+        "href": "#",
+        "line": 126
+      },
+      {
+        "type": "link",
+        "label": "Clients",
+        "href": "#",
+        "line": 131
+      },
+      {
+        "type": "link",
+        "label": "Invoices",
+        "href": "#",
+        "line": 136
+      },
+      {
+        "type": "link",
+        "label": "insights",
+        "href": "#",
+        "line": 141
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 146
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Create New",
+        "line": 121
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 163
+      },
+      {
+        "type": "button",
+        "label": "help_outline",
+        "line": 166
+      },
+      {
+        "type": "button",
+        "label": "Add Expense",
+        "line": 169
+      },
+      {
+        "type": "button",
+        "label": "Filter",
+        "line": 184
+      },
+      {
+        "type": "button",
+        "label": "Export",
+        "line": 187
+      },
+      {
+        "type": "button",
+        "label": "Send Reminder",
+        "line": 238
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 12,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "bbe760baf67d49b6beb63349238063ab",
+    "screenTitle": "Settings and Preferences - LedgerNest",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "dashboard",
+        "href": "#",
+        "line": 130
+      },
+      {
+        "type": "link",
+        "label": "Clients",
+        "href": "#",
+        "line": 134
+      },
+      {
+        "type": "link",
+        "label": "Invoices",
+        "href": "#",
+        "line": 138
+      },
+      {
+        "type": "link",
+        "label": "insights",
+        "href": "#",
+        "line": 142
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 146
+      },
+      {
+        "type": "button",
+        "label": "Create New",
+        "line": 152
+      },
+      {
+        "type": "button",
+        "label": "Add Expense",
+        "line": 175
+      },
+      {
+        "type": "button",
+        "label": "Workflow",
+        "line": 181
+      },
+      {
+        "type": "button",
+        "label": "Saved Filters",
+        "line": 182
+      },
+      {
+        "type": "button",
+        "label": "Notifications",
+        "line": 183
+      },
+      {
+        "type": "button",
+        "label": "Data Reset",
+        "line": 184
+      },
+      {
+        "type": "button",
+        "label": "list",
+        "line": 201
+      },
+      {
+        "type": "button",
+        "label": "Board",
+        "line": 204
+      },
+      {
+        "type": "button",
+        "label": "New",
+        "line": 264
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 279
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 280
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 293
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 294
+      },
+      {
+        "type": "button",
+        "label": "Reset State",
+        "line": 310
+      },
+      {
+        "type": "button",
+        "label": "Cancel",
+        "line": 325
+      },
+      {
+        "type": "button",
+        "label": "Preferences",
+        "line": 326
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 215
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 219
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 240
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 251
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "dashboard",
+        "href": "#",
+        "line": 130
+      },
+      {
+        "type": "link",
+        "label": "Clients",
+        "href": "#",
+        "line": 134
+      },
+      {
+        "type": "link",
+        "label": "Invoices",
+        "href": "#",
+        "line": 138
+      },
+      {
+        "type": "link",
+        "label": "insights",
+        "href": "#",
+        "line": 142
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 146
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Create New",
+        "line": 152
+      },
+      {
+        "type": "button",
+        "label": "Add Expense",
+        "line": 175
+      },
+      {
+        "type": "button",
+        "label": "Workflow",
+        "line": 181
+      },
+      {
+        "type": "button",
+        "label": "Saved Filters",
+        "line": 182
+      },
+      {
+        "type": "button",
+        "label": "Notifications",
+        "line": 183
+      },
+      {
+        "type": "button",
+        "label": "Data Reset",
+        "line": 184
+      },
+      {
+        "type": "button",
+        "label": "list",
+        "line": 201
+      },
+      {
+        "type": "button",
+        "label": "Board",
+        "line": 204
+      },
+      {
+        "type": "button",
+        "label": "New",
+        "line": 264
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 279
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 280
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 293
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 294
+      },
+      {
+        "type": "button",
+        "label": "Reset State",
+        "line": 310
+      },
+      {
+        "type": "button",
+        "label": "Cancel",
+        "line": 325
+      },
+      {
+        "type": "button",
+        "label": "Preferences",
+        "line": 326
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 215
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 219
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 240
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 251
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 25,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "ce5b64bd343c46ca8a313b6ba02201fd",
+    "screenTitle": "Client Operations - LedgerNest",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "dashboard",
+        "href": "#",
+        "line": 133
+      },
+      {
+        "type": "link",
+        "label": "Clients",
+        "href": "#",
+        "line": 137
+      },
+      {
+        "type": "link",
+        "label": "Invoices",
+        "href": "#",
+        "line": 141
+      },
+      {
+        "type": "link",
+        "label": "insights",
+        "href": "#",
+        "line": 145
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 149
+      },
+      {
+        "type": "button",
+        "label": "Create New",
+        "line": 128
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 166
+      },
+      {
+        "type": "button",
+        "label": "help_outline",
+        "line": 169
+      },
+      {
+        "type": "button",
+        "label": "Add Expense",
+        "line": 172
+      },
+      {
+        "type": "button",
+        "label": "Retry Load",
+        "line": 188
+      },
+      {
+        "type": "button",
+        "label": "Create Client",
+        "line": 192
+      },
+      {
+        "type": "button",
+        "label": "Filter",
+        "line": 230
+      },
+      {
+        "type": "button",
+        "label": "Active",
+        "line": 235
+      },
+      {
+        "type": "button",
+        "label": "On Hold",
+        "line": 236
+      },
+      {
+        "type": "button",
+        "label": "Inactive",
+        "line": 237
+      },
+      {
+        "type": "button",
+        "label": "Edit",
+        "line": 281
+      },
+      {
+        "type": "button",
+        "label": "Delete",
+        "line": 284
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 310
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 313
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 339
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 342
+      },
+      {
+        "type": "button",
+        "label": "close",
+        "line": 365
+      },
+      {
+        "type": "button",
+        "label": "View all",
+        "line": 407
+      },
+      {
+        "type": "button",
+        "label": "View Full Profile",
+        "line": 429
+      },
+      {
+        "type": "input",
+        "label": "Search clients, invoices...",
+        "inputType": "text",
+        "placeholder": "Search clients, invoices...",
+        "line": 162
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 241
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "dashboard",
+        "href": "#",
+        "line": 133
+      },
+      {
+        "type": "link",
+        "label": "Clients",
+        "href": "#",
+        "line": 137
+      },
+      {
+        "type": "link",
+        "label": "Invoices",
+        "href": "#",
+        "line": 141
+      },
+      {
+        "type": "link",
+        "label": "insights",
+        "href": "#",
+        "line": 145
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 149
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Create New",
+        "line": 128
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 166
+      },
+      {
+        "type": "button",
+        "label": "help_outline",
+        "line": 169
+      },
+      {
+        "type": "button",
+        "label": "Add Expense",
+        "line": 172
+      },
+      {
+        "type": "button",
+        "label": "Retry Load",
+        "line": 188
+      },
+      {
+        "type": "button",
+        "label": "Create Client",
+        "line": 192
+      },
+      {
+        "type": "button",
+        "label": "Filter",
+        "line": 230
+      },
+      {
+        "type": "button",
+        "label": "Active",
+        "line": 235
+      },
+      {
+        "type": "button",
+        "label": "On Hold",
+        "line": 236
+      },
+      {
+        "type": "button",
+        "label": "Inactive",
+        "line": 237
+      },
+      {
+        "type": "button",
+        "label": "Edit",
+        "line": 281
+      },
+      {
+        "type": "button",
+        "label": "Delete",
+        "line": 284
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 310
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 313
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 339
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 342
+      },
+      {
+        "type": "button",
+        "label": "close",
+        "line": 365
+      },
+      {
+        "type": "button",
+        "label": "View all",
+        "line": 407
+      },
+      {
+        "type": "button",
+        "label": "View Full Profile",
+        "line": 429
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Search clients, invoices...",
+        "inputType": "text",
+        "placeholder": "Search clients, invoices...",
+        "line": 162
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 241
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 26,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  }
+]
