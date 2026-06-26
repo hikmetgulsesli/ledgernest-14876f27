@@ -1,0 +1,46 @@
+[
+  {
+    "screenId": "312505334abc4c858faf55476d8c1960",
+    "title": "Client Editor - LedgerNest",
+    "htmlFile": "312505334abc4c858faf55476d8c1960.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sX2ZjY2E0ZDY1NDgxNTRhMTJhZTYxMGE0YzRhOWRmZjQ1EgsSBxCN19Wi9xcYAZIBJAoKcHJvamVjdF9pZBIWQhQxMDgxMzgwNDk2Mzg3ODE3OTIyNg&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/ledgernest-14876f27/stitch/312505334abc4c858faf55476d8c1960.html",
+    "surfaceIds": [
+      "SURF_CLIENT_EDITOR"
+    ]
+  },
+  {
+    "screenId": "721fa6fb775a480783d377c73a81387c",
+    "title": "Insights - LedgerNest",
+    "htmlFile": "721fa6fb775a480783d377c73a81387c.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzVhYmQ4YzhmYzNmYTRhODI5ZmI1NWU3YzQ5MmQ2YzI2EgsSBxCN19Wi9xcYAZIBJAoKcHJvamVjdF9pZBIWQhQxMDgxMzgwNDk2Mzg3ODE3OTIyNg&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/ledgernest-14876f27/stitch/721fa6fb775a480783d377c73a81387c.html",
+    "surfaceIds": [
+      "SURF_INSIGHTS"
+    ]
+  },
+  {
+    "screenId": "bbe760baf67d49b6beb63349238063ab",
+    "title": "Settings and Preferences - LedgerNest",
+    "htmlFile": "bbe760baf67d49b6beb63349238063ab.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzJkZTJiMmY0NzdlODRkNDI5YjQ4MWQ1ZjE2ZTU3YjcxEgsSBxCN19Wi9xcYAZIBJAoKcHJvamVjdF9pZBIWQhQxMDgxMzgwNDk2Mzg3ODE3OTIyNg&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/ledgernest-14876f27/stitch/bbe760baf67d49b6beb63349238063ab.html",
+    "surfaceIds": [
+      "SURF_SETTINGS_AND_PREFERENCES"
+    ]
+  },
+  {
+    "screenId": "ce5b64bd343c46ca8a313b6ba02201fd",
+    "title": "Client Operations - LedgerNest",
+    "htmlFile": "ce5b64bd343c46ca8a313b6ba02201fd.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzM0ZGQyZmEzMWE1ZTQ2NWRiMWI1YjdkODhlYTAxMmM4EgsSBxCN19Wi9xcYAZIBJAoKcHJvamVjdF9pZBIWQhQxMDgxMzgwNDk2Mzg3ODE3OTIyNg&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/ledgernest-14876f27/stitch/ce5b64bd343c46ca8a313b6ba02201fd.html",
+    "surfaceIds": [
+      "SURF_CLIENT_OPERATIONS"
+    ]
+  }
+]

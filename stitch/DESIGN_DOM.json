@@ -1,0 +1,2426 @@
+{
+  "generatedAt": "2026-06-26T08:54:25.347Z",
+  "screenCount": 4,
+  "screens": {
+    "312505334abc4c858faf55476d8c1960": {
+      "screenId": "312505334abc4c858faf55476d8c1960",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "header",
+          "layout": "flex-row",
+          "classes": [
+            "bg-surface-container-lowest",
+            "border-b",
+            "border-outline-variant",
+            "px-margin-desktop",
+            "py-lg",
+            "flex",
+            "items-center",
+            "justify-between",
+            "sticky",
+            "top-0"
+          ],
+          "childCount": 4
+        },
+        {
+          "tag": "main",
+          "layout": "flex-row",
+          "classes": [
+            "flex-1",
+            "overflow-y-auto",
+            "p-margin-mobile",
+            "md:p-margin-desktop",
+            "pb-xl"
+          ],
+          "childCount": 16
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "Go back",
+          "classes": [
+            "text-on-surface-variant",
+            "hover:text-on-surface",
+            "transition-colors",
+            "flex",
+            "items-center",
+            "justify-center",
+            "p-sm",
+            "rounded-lg",
+            "hover:bg-surface-container-low"
+          ],
+          "icon": "arrow_back",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Cancel",
+          "classes": [
+            "h-[36px]",
+            "px-md",
+            "rounded",
+            "border",
+            "border-outline-variant",
+            "text-on-surface",
+            "font-label-md",
+            "text-label-md",
+            "hover:bg-surface-container-low",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "dismiss",
+          "expectedBehavior": "close dialog/panel or return to previous state"
+        },
+        {
+          "kind": "button",
+          "label": "Save Client",
+          "classes": [
+            "h-[36px]",
+            "px-md",
+            "rounded",
+            "bg-primary-container",
+            "text-on-primary",
+            "font-label-md",
+            "text-label-md",
+            "hover:bg-primary",
+            "transition-colors",
+            "shadow-sm"
+          ],
+          "icon": null,
+          "action": "form-submit",
+          "expectedBehavior": "validate inputs and submit/apply changes"
+        }
+      ],
+      "inputs": [
+        {
+          "kind": "input",
+          "type": "text",
+          "label": "client_name",
+          "placeholder": "",
+          "name": "client_name",
+          "classes": [
+            "h-[36px]",
+            "px-md",
+            "rounded",
+            "border",
+            "border-outline-variant",
+            "bg-surface-container-lowest",
+            "text-on-surface",
+            "font-body-md",
+            "text-body-md",
+            "focus:border-primary-container",
+            "focus:ring-2",
+            "focus:ring-[#bfdbfe]",
+            "outline-none",
+            "transition-all",
+            "placeholder:text-on-surface-variant/50"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "text",
+          "label": "Optional",
+          "placeholder": "Optional",
+          "name": "tax_id",
+          "classes": [
+            "h-[36px]",
+            "px-md",
+            "rounded",
+            "border",
+            "border-outline-variant",
+            "bg-surface-container-lowest",
+            "text-on-surface",
+            "font-body-md",
+            "text-body-md",
+            "focus:border-primary-container",
+            "focus:ring-2",
+            "focus:ring-[#bfdbfe]",
+            "outline-none",
+            "transition-all",
+            "placeholder:text-on-surface-variant/50"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "email",
+          "label": "billing_email",
+          "placeholder": "",
+          "name": "billing_email",
+          "classes": [
+            "h-[36px]",
+            "w-full",
+            "px-md",
+            "pr-xl",
+            "rounded",
+            "border",
+            "border-error",
+            "bg-error-container/10",
+            "text-on-surface",
+            "font-body-md",
+            "text-body-md",
+            "focus:border-error",
+            "focus:ring-2",
+            "focus:ring-[#fecaca]",
+            "outline-none",
+            "transition-all"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "text",
+          "label": "123 Business Rd, Suite 100",
+          "placeholder": "123 Business Rd, Suite 100",
+          "name": "street_address",
+          "classes": [
+            "h-[36px]",
+            "px-md",
+            "rounded",
+            "border",
+            "border-outline-variant",
+            "bg-surface-container-lowest",
+            "text-on-surface",
+            "font-body-md",
+            "text-body-md",
+            "focus:border-primary-container",
+            "focus:ring-2",
+            "focus:ring-[#bfdbfe]",
+            "outline-none",
+            "transition-all",
+            "placeholder:text-on-surface-variant/50"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "text",
+          "label": "Metropolis",
+          "placeholder": "Metropolis",
+          "name": "city",
+          "classes": [
+            "h-[36px]",
+            "px-md",
+            "rounded",
+            "border",
+            "border-outline-variant",
+            "bg-surface-container-lowest",
+            "text-on-surface",
+            "font-body-md",
+            "text-body-md",
+            "focus:border-primary-container",
+            "focus:ring-2",
+            "focus:ring-[#bfdbfe]",
+            "outline-none",
+            "transition-all",
+            "placeholder:text-on-surface-variant/50"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "text",
+          "label": "10001",
+          "placeholder": "10001",
+          "name": "postal_code",
+          "classes": [
+            "h-[36px]",
+            "px-md",
+            "rounded",
+            "border",
+            "border-outline-variant",
+            "bg-surface-container-lowest",
+            "text-on-surface",
+            "font-body-md",
+            "text-body-md",
+            "focus:border-primary-container",
+            "focus:ring-2",
+            "focus:ring-[#bfdbfe]",
+            "outline-none",
+            "transition-all",
+            "placeholder:text-on-surface-variant/50"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "Clients",
+          "href": "#",
+          "classes": [
+            "hover:text-primary",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "arrow_back",
+        "chevron_right",
+        "error"
+      ],
+      "images": [],
+      "cssVars": {},
+      "colorPalette": {
+        "error-container": "#ffdad6",
+        "surface-variant": "#e1e2ed",
+        "on-surface": "#191b23",
+        "tertiary-container": "#007d55",
+        "secondary-fixed": "#d3e4fe",
+        "surface-container-low": "#f3f3fe",
+        "secondary-container": "#d0e1fb",
+        "on-error-container": "#93000a",
+        "tertiary": "#006242",
+        "surface-bright": "#faf8ff",
+        "surface-tint": "#0053db",
+        "on-surface-variant": "#434655",
+        "on-primary-fixed": "#00174b",
+        "on-secondary-fixed": "#0b1c30",
+        "primary-container": "#2563eb",
+        "on-tertiary": "#ffffff",
+        "on-secondary": "#ffffff",
+        "tertiary-fixed-dim": "#4edea3",
+        "on-tertiary-container": "#bdffdb",
+        "primary-fixed": "#dbe1ff",
+        "on-tertiary-fixed": "#002113",
+        "outline": "#737686",
+        "inverse-on-surface": "#f0f0fb",
+        "primary": "#004ac6",
+        "secondary-fixed-dim": "#b7c8e1",
+        "surface-dim": "#d9d9e5",
+        "primary-fixed-dim": "#b4c5ff",
+        "outline-variant": "#c3c6d7",
+        "surface-container-high": "#e7e7f3",
+        "on-secondary-fixed-variant": "#38485d",
+        "on-background": "#191b23",
+        "error": "#ba1a1a",
+        "background": "#faf8ff",
+        "on-primary-container": "#eeefff",
+        "tertiary-fixed": "#6ffbbe",
+        "surface-container-lowest": "#ffffff",
+        "on-tertiary-fixed-variant": "#005236",
+        "on-primary-fixed-variant": "#003ea8",
+        "secondary": "#505f76",
+        "surface-container": "#ededf9",
+        "on-primary": "#ffffff",
+        "inverse-primary": "#b4c5ff",
+        "inverse-surface": "#2e3039",
+        "surface-container-highest": "#e1e2ed",
+        "on-error": "#ffffff",
+        "on-secondary-container": "#54647a",
+        "surface": "#faf8ff"
+      },
+      "fonts": [
+        "Material Symbols Outlined",
+        "Inter"
+      ],
+      "layoutHints": {
+        "gridCols": 2,
+        "flexDirection": "col"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "Clients",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "Go back",
+          "icon": "arrow_back",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Cancel",
+          "icon": null,
+          "action": "dismiss",
+          "expectedBehavior": "close dialog/panel or return to previous state"
+        },
+        {
+          "kind": "button",
+          "label": "Save Client",
+          "icon": null,
+          "action": "form-submit",
+          "expectedBehavior": "validate inputs and submit/apply changes"
+        },
+        {
+          "kind": "input",
+          "label": "client_name",
+          "type": "text",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "Optional",
+          "type": "text",
+          "placeholder": "Optional",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "billing_email",
+          "type": "email",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "123 Business Rd, Suite 100",
+          "type": "text",
+          "placeholder": "123 Business Rd, Suite 100",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "Metropolis",
+          "type": "text",
+          "placeholder": "Metropolis",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "10001",
+          "type": "text",
+          "placeholder": "10001",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "tabBar": [],
+      "title": "Client Editor - LedgerNest"
+    },
+    "721fa6fb775a480783d377c73a81387c": {
+      "screenId": "721fa6fb775a480783d377c73a81387c",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "nav",
+          "layout": "flex-col",
+          "classes": [
+            "hidden",
+            "md:flex",
+            "flex-col",
+            "h-full",
+            "py-lg",
+            "px-md",
+            "bg-surface",
+            "dark:bg-inverse-surface",
+            "fixed",
+            "left-0"
+          ],
+          "childCount": 7
+        },
+        {
+          "tag": "main",
+          "layout": "flex-col",
+          "classes": [
+            "flex-1",
+            "md:ml-[240px]",
+            "flex",
+            "flex-col",
+            "h-full",
+            "bg-[#f8fafc]"
+          ],
+          "childCount": 35
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "Create New",
+          "classes": [
+            "mb-lg",
+            "w-full",
+            "flex",
+            "items-center",
+            "justify-center",
+            "gap-2",
+            "bg-primary-container",
+            "text-on-primary-container",
+            "hover:bg-primary",
+            "hover:text-on-primary",
+            "transition-colors",
+            "py-2",
+            "px-4",
+            "rounded",
+            "font-label-md",
+            "text-label-md"
+          ],
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "notifications",
+          "classes": [
+            "p-2",
+            "rounded-full",
+            "text-on-surface-variant",
+            "hover:bg-surface-container-low",
+            "transition-all"
+          ],
+          "icon": "notifications",
+          "action": "navigate",
+          "expectedBehavior": "navigate:/notifications",
+          "expectedRoute": "/notifications",
+          "routeInferred": true
+        },
+        {
+          "kind": "button",
+          "label": "help_outline",
+          "classes": [
+            "p-2",
+            "rounded-full",
+            "text-on-surface-variant",
+            "hover:bg-surface-container-low",
+            "transition-all"
+          ],
+          "icon": "help_outline",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Add Expense",
+          "classes": [
+            "hidden",
+            "md:block",
+            "px-4",
+            "py-2",
+            "bg-primary",
+            "text-on-primary",
+            "rounded",
+            "font-label-md",
+            "text-label-md",
+            "hover:bg-primary-container",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Filter",
+          "classes": [
+            "flex",
+            "items-center",
+            "gap-2",
+            "px-4",
+            "py-2",
+            "border",
+            "border-[#e2e8f0]",
+            "text-[#1e293b]",
+            "rounded",
+            "font-label-md",
+            "text-label-md",
+            "hover:bg-surface-container-low",
+            "transition-colors"
+          ],
+          "icon": "filter_list",
+          "action": "search",
+          "expectedBehavior": "filter/search visible results from input/query"
+        },
+        {
+          "kind": "button",
+          "label": "Export",
+          "classes": [
+            "flex",
+            "items-center",
+            "gap-2",
+            "px-4",
+            "py-2",
+            "border",
+            "border-[#e2e8f0]",
+            "text-[#1e293b]",
+            "rounded",
+            "font-label-md",
+            "text-label-md",
+            "hover:bg-surface-container-low",
+            "transition-colors"
+          ],
+          "icon": "download",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Send Reminder",
+          "classes": [
+            "self-start",
+            "px-3",
+            "py-1.5",
+            "bg-surface-container-lowest",
+            "border",
+            "border-[#e2e8f0]",
+            "text-on-surface",
+            "text-label-sm",
+            "font-label-sm",
+            "rounded",
+            "hover:bg-surface-container-low",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "form-submit",
+          "expectedBehavior": "validate inputs and submit/apply changes"
+        },
+        {
+          "kind": "button",
+          "label": "LedgerNest Freelancer Pro",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "dashboard",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined",
+            "text-[20px]"
+          ],
+          "icon": "dashboard",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Clients",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined",
+            "text-[20px]"
+          ],
+          "icon": "group",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Invoices",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined",
+            "text-[20px]"
+          ],
+          "icon": "receipt_long",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "insights",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined",
+            "text-[20px]"
+          ],
+          "icon": "insights",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined",
+            "text-[20px]"
+          ],
+          "icon": "settings",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "add",
+        "dashboard",
+        "group",
+        "receipt_long",
+        "insights",
+        "settings",
+        "notifications",
+        "help_outline",
+        "filter_list",
+        "download",
+        "trending_up",
+        "trending_flat",
+        "warning",
+        "lightbulb",
+        "location_off",
+        "payments",
+        "person_add",
+        "draft"
+      ],
+      "images": [
+        {
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuCbs-VcceydbtdDgL16P9nO_UstLbHWgWPG8H20eQ2Nd2bj2k2PgqLqqbioivmniSB3o9efv7c4KJVs0fZ64f1vsrEUXN_lOsvDUt2WVb6dNzozqg1fKGlx_guXBXrZmZzMYse9Loga5yD5guMKLj",
+          "alt": "Freelancer Profile"
+        },
+        {
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuCWEwbCcKtglUy6Uj6Xf7I4SHAl_NAXNyNJ46Rxt2lkJnViGYmBVoJzEew-Lz2PvUW6mtZHTuRcfoFEyvCjAhmVWhgvv-X2w9vnh58XXwc9H3xe6ahy48EnGhu8cg6ZZhWfOmekkIutWdAGTRxmj9",
+          "alt": "User Avatar"
+        }
+      ],
+      "cssVars": {},
+      "colorPalette": {
+        "error-container": "#ffdad6",
+        "surface-variant": "#e1e2ed",
+        "on-surface": "#191b23",
+        "tertiary-container": "#007d55",
+        "secondary-fixed": "#d3e4fe",
+        "surface-container-low": "#f3f3fe",
+        "secondary-container": "#d0e1fb",
+        "on-error-container": "#93000a",
+        "tertiary": "#006242",
+        "surface-bright": "#faf8ff",
+        "surface-tint": "#0053db",
+        "on-surface-variant": "#434655",
+        "on-primary-fixed": "#00174b",
+        "on-secondary-fixed": "#0b1c30",
+        "primary-container": "#2563eb",
+        "on-tertiary": "#ffffff",
+        "on-secondary": "#ffffff",
+        "tertiary-fixed-dim": "#4edea3",
+        "on-tertiary-container": "#bdffdb",
+        "primary-fixed": "#dbe1ff",
+        "on-tertiary-fixed": "#002113",
+        "outline": "#737686",
+        "inverse-on-surface": "#f0f0fb",
+        "primary": "#004ac6",
+        "secondary-fixed-dim": "#b7c8e1",
+        "surface-dim": "#d9d9e5",
+        "primary-fixed-dim": "#b4c5ff",
+        "outline-variant": "#c3c6d7",
+        "surface-container-high": "#e7e7f3",
+        "on-secondary-fixed-variant": "#38485d",
+        "on-background": "#191b23",
+        "error": "#ba1a1a",
+        "background": "#faf8ff",
+        "on-primary-container": "#eeefff",
+        "tertiary-fixed": "#6ffbbe",
+        "surface-container-lowest": "#ffffff",
+        "on-tertiary-fixed-variant": "#005236",
+        "on-primary-fixed-variant": "#003ea8",
+        "secondary": "#505f76",
+        "surface-container": "#ededf9",
+        "on-primary": "#ffffff",
+        "inverse-primary": "#b4c5ff",
+        "inverse-surface": "#2e3039",
+        "surface-container-highest": "#e1e2ed",
+        "on-error": "#ffffff",
+        "on-secondary-container": "#54647a",
+        "surface": "#faf8ff"
+      },
+      "fonts": [
+        "Inter",
+        "Material Symbols Outlined"
+      ],
+      "layoutHints": {
+        "gridCols": 1,
+        "flexDirection": "col",
+        "gap": "2"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "dashboard",
+          "icon": "dashboard",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Clients",
+          "icon": "group",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Invoices",
+          "icon": "receipt_long",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "insights",
+          "icon": "insights",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "Create New",
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "notifications",
+          "icon": "notifications",
+          "action": "navigate",
+          "route": "/notifications",
+          "expectedBehavior": "navigate:/notifications"
+        },
+        {
+          "kind": "button",
+          "label": "help_outline",
+          "icon": "help_outline",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Add Expense",
+          "icon": null,
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Filter",
+          "icon": "filter_list",
+          "action": "search",
+          "expectedBehavior": "filter/search visible results from input/query"
+        },
+        {
+          "kind": "button",
+          "label": "Export",
+          "icon": "download",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Send Reminder",
+          "icon": null,
+          "action": "form-submit",
+          "expectedBehavior": "validate inputs and submit/apply changes"
+        },
+        {
+          "kind": "button",
+          "label": "LedgerNest Freelancer Pro",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "button",
+          "label": "LedgerNest Freelancer Pro",
+          "icon": null,
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "Create New",
+          "icon": "add",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "dashboard",
+          "icon": "dashboard",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Clients",
+          "icon": "group",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Invoices",
+          "icon": "receipt_long",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "insights",
+          "icon": "insights",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "active": true
+        }
+      ],
+      "title": "Insights - LedgerNest"
+    },
+    "bbe760baf67d49b6beb63349238063ab": {
+      "screenId": "bbe760baf67d49b6beb63349238063ab",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "nav",
+          "layout": "absolute",
+          "classes": [
+            "bg-surface",
+            "dark:bg-inverse-surface",
+            "fixed",
+            "left-0",
+            "top-0",
+            "h-full",
+            "w-[240px]",
+            "border-r",
+            "border-outline-variant",
+            "dark:border-outline"
+          ],
+          "childCount": 4
+        },
+        {
+          "tag": "main",
+          "layout": "flex-row",
+          "classes": [
+            "flex-1",
+            "ml-0",
+            "md:ml-[240px]",
+            "pt-16",
+            "md:pt-0",
+            "h-full",
+            "overflow-y-auto",
+            "bg-[#f8fafc]",
+            "relative"
+          ],
+          "childCount": 38
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "Create New",
+          "classes": [
+            "w-full",
+            "bg-primary-container",
+            "text-on-primary-container",
+            "font-label-md",
+            "text-label-md",
+            "py-sm",
+            "rounded",
+            "flex",
+            "items-center",
+            "justify-center",
+            "gap-xs",
+            "hover:bg-primary",
+            "transition-colors",
+            "hover:text-white"
+          ],
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Add Expense",
+          "classes": [
+            "bg-primary",
+            "text-white",
+            "font-label-md",
+            "text-label-md",
+            "px-md",
+            "py-[6px]",
+            "rounded",
+            "hover:bg-blue-700",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Workflow",
+          "classes": [
+            "px-md",
+            "py-sm",
+            "font-label-md",
+            "text-label-md",
+            "text-primary",
+            "border-b-2",
+            "border-primary",
+            "whitespace-nowrap"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Saved Filters",
+          "classes": [
+            "px-md",
+            "py-sm",
+            "font-label-md",
+            "text-label-md",
+            "text-on-surface-variant",
+            "hover:text-primary",
+            "whitespace-nowrap",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "form-submit",
+          "expectedBehavior": "validate inputs and submit/apply changes"
+        },
+        {
+          "kind": "button",
+          "label": "Notifications",
+          "classes": [
+            "px-md",
+            "py-sm",
+            "font-label-md",
+            "text-label-md",
+            "text-on-surface-variant",
+            "hover:text-primary",
+            "whitespace-nowrap",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:/notifications",
+          "expectedRoute": "/notifications",
+          "routeInferred": true
+        },
+        {
+          "kind": "button",
+          "label": "Data Reset",
+          "classes": [
+            "px-md",
+            "py-sm",
+            "font-label-md",
+            "text-label-md",
+            "text-on-surface-variant",
+            "hover:text-error",
+            "whitespace-nowrap",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
+        },
+        {
+          "kind": "button",
+          "label": "list",
+          "classes": [
+            "flex",
+            "items-center",
+            "gap-xs",
+            "px-sm",
+            "py-xs",
+            "rounded",
+            "bg-white",
+            "shadow-sm",
+            "font-label-sm",
+            "text-label-sm",
+            "text-primary"
+          ],
+          "icon": "list",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Board",
+          "classes": [
+            "flex",
+            "items-center",
+            "gap-xs",
+            "px-sm",
+            "py-xs",
+            "rounded",
+            "font-label-sm",
+            "text-label-sm",
+            "text-on-surface-variant",
+            "hover:text-on-surface",
+            "transition-colors"
+          ],
+          "icon": "space_dashboard",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "New",
+          "classes": [
+            "text-primary",
+            "font-label-md",
+            "text-label-md",
+            "flex",
+            "items-center",
+            "gap-xs",
+            "hover:underline"
+          ],
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "edit",
+          "classes": [
+            "text-secondary",
+            "hover:text-primary",
+            "transition-colors",
+            "p-xs",
+            "rounded",
+            "hover:bg-surface-container"
+          ],
+          "icon": "edit",
+          "action": "edit",
+          "expectedBehavior": "open edit flow or update selected item/state"
+        },
+        {
+          "kind": "button",
+          "label": "delete",
+          "classes": [
+            "text-secondary",
+            "hover:text-error",
+            "transition-colors",
+            "p-xs",
+            "rounded",
+            "hover:bg-error-container/30"
+          ],
+          "icon": "delete",
+          "action": "destructive",
+          "expectedBehavior": "perform destructive action with visible feedback or confirmation"
+        },
+        {
+          "kind": "button",
+          "label": "Reset State",
+          "classes": [
+            "bg-white",
+            "border",
+            "border-error",
+            "text-error",
+            "font-label-md",
+            "text-label-md",
+            "px-md",
+            "py-sm",
+            "rounded",
+            "hover:bg-error",
+            "hover:text-white",
+            "transition-colors",
+            "flex",
+            "items-center",
+            "gap-xs",
+            "whitespace-nowrap"
+          ],
+          "icon": "restart_alt",
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
+        },
+        {
+          "kind": "button",
+          "label": "Cancel",
+          "classes": [
+            "text-on-surface-variant",
+            "hover:text-on-surface",
+            "font-label-md",
+            "text-label-md",
+            "px-md",
+            "py-xs",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "dismiss",
+          "expectedBehavior": "close dialog/panel or return to previous state"
+        },
+        {
+          "kind": "button",
+          "label": "Preferences",
+          "classes": [
+            "bg-primary",
+            "text-white",
+            "font-label-md",
+            "text-label-md",
+            "px-lg",
+            "py-sm",
+            "rounded",
+            "shadow-sm",
+            "hover:bg-blue-700",
+            "hover:shadow",
+            "transition-all",
+            "flex",
+            "items-center",
+            "gap-xs"
+          ],
+          "icon": "save",
+          "action": "form-submit",
+          "expectedBehavior": "validate inputs and submit/apply changes"
+        },
+        {
+          "kind": "button",
+          "label": "LedgerNest Freelancer Pro",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Freelancer Profile",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [
+        {
+          "kind": "input",
+          "type": "radio",
+          "label": "density",
+          "placeholder": "",
+          "name": "density",
+          "classes": [
+            "form-radio",
+            "text-primary",
+            "focus:ring-primary",
+            "h-4",
+            "w-4",
+            "border-outline-variant"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "checkbox",
+          "label": "toggle1",
+          "placeholder": "",
+          "name": "toggle1",
+          "classes": [
+            "toggle-checkbox",
+            "absolute",
+            "block",
+            "w-4",
+            "h-4",
+            "rounded-full",
+            "bg-white",
+            "border-4",
+            "appearance-none",
+            "cursor-pointer",
+            "opacity-0"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "checkbox",
+          "label": "toggle2",
+          "placeholder": "",
+          "name": "toggle2",
+          "classes": [
+            "toggle-checkbox",
+            "absolute",
+            "block",
+            "w-4",
+            "h-4",
+            "rounded-full",
+            "bg-white",
+            "border-4",
+            "appearance-none",
+            "cursor-pointer",
+            "opacity-0"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "dashboard",
+          "href": "#",
+          "classes": [
+            "font-body-md",
+            "text-body-md"
+          ],
+          "icon": "dashboard",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Clients",
+          "href": "#",
+          "classes": [
+            "font-body-md",
+            "text-body-md"
+          ],
+          "icon": "group",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Invoices",
+          "href": "#",
+          "classes": [
+            "font-body-md",
+            "text-body-md"
+          ],
+          "icon": "receipt_long",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "insights",
+          "href": "#",
+          "classes": [
+            "font-body-md",
+            "text-body-md"
+          ],
+          "icon": "insights",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "href": "#",
+          "classes": [
+            "font-body-md",
+            "text-body-md"
+          ],
+          "icon": "settings",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "dashboard",
+        "group",
+        "receipt_long",
+        "insights",
+        "settings",
+        "add",
+        "menu",
+        "notifications",
+        "help_outline",
+        "view_quilt",
+        "list",
+        "space_dashboard",
+        "notifications_active",
+        "filter_list",
+        "label",
+        "edit",
+        "delete",
+        "warning",
+        "restart_alt",
+        "check_circle",
+        "save"
+      ],
+      "images": [
+        {
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuDndFZc_u_5cYXR7UP9wF4NdpI4O6_y7nxt_UNRBqXPzcmPDKwhsFEWxxTWu94AtXP3kHRXZuWIvkzmSzZR9R6h3PT629o-gen-2M72CK69MWvNEy_nOmtND0LIG8R_BpVxq2vpdIztkGygRUSk8r",
+          "alt": "A small, professional avatar placeholder image for a freelancer profile, clean modern aesthetic, light mode compatible."
+        }
+      ],
+      "cssVars": {},
+      "colorPalette": {
+        "error-container": "#ffdad6",
+        "surface-variant": "#e1e2ed",
+        "on-surface": "#191b23",
+        "tertiary-container": "#007d55",
+        "secondary-fixed": "#d3e4fe",
+        "surface-container-low": "#f3f3fe",
+        "secondary-container": "#d0e1fb",
+        "on-error-container": "#93000a",
+        "tertiary": "#006242",
+        "surface-bright": "#faf8ff",
+        "surface-tint": "#0053db",
+        "on-surface-variant": "#434655",
+        "on-primary-fixed": "#00174b",
+        "on-secondary-fixed": "#0b1c30",
+        "primary-container": "#2563eb",
+        "on-tertiary": "#ffffff",
+        "on-secondary": "#ffffff",
+        "tertiary-fixed-dim": "#4edea3",
+        "on-tertiary-container": "#bdffdb",
+        "primary-fixed": "#dbe1ff",
+        "on-tertiary-fixed": "#002113",
+        "outline": "#737686",
+        "inverse-on-surface": "#f0f0fb",
+        "primary": "#004ac6",
+        "secondary-fixed-dim": "#b7c8e1",
+        "surface-dim": "#d9d9e5",
+        "primary-fixed-dim": "#b4c5ff",
+        "outline-variant": "#c3c6d7",
+        "surface-container-high": "#e7e7f3",
+        "on-secondary-fixed-variant": "#38485d",
+        "on-background": "#191b23",
+        "error": "#ba1a1a",
+        "background": "#faf8ff",
+        "on-primary-container": "#eeefff",
+        "tertiary-fixed": "#6ffbbe",
+        "surface-container-lowest": "#ffffff",
+        "on-tertiary-fixed-variant": "#005236",
+        "on-primary-fixed-variant": "#003ea8",
+        "secondary": "#505f76",
+        "surface-container": "#ededf9",
+        "on-primary": "#ffffff",
+        "inverse-primary": "#b4c5ff",
+        "inverse-surface": "#2e3039",
+        "surface-container-highest": "#e1e2ed",
+        "on-error": "#ffffff",
+        "on-secondary-container": "#54647a",
+        "surface": "#faf8ff"
+      },
+      "fonts": [
+        "Material Symbols Outlined",
+        "Inter"
+      ],
+      "layoutHints": {
+        "gridCols": 1,
+        "flexDirection": "col"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "dashboard",
+          "icon": "dashboard",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Clients",
+          "icon": "group",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Invoices",
+          "icon": "receipt_long",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "insights",
+          "icon": "insights",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "Create New",
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Add Expense",
+          "icon": null,
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Workflow",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Saved Filters",
+          "icon": null,
+          "action": "form-submit",
+          "expectedBehavior": "validate inputs and submit/apply changes"
+        },
+        {
+          "kind": "button",
+          "label": "Notifications",
+          "icon": null,
+          "action": "navigate",
+          "route": "/notifications",
+          "expectedBehavior": "navigate:/notifications"
+        },
+        {
+          "kind": "button",
+          "label": "Data Reset",
+          "icon": null,
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
+        },
+        {
+          "kind": "button",
+          "label": "list",
+          "icon": "list",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Board",
+          "icon": "space_dashboard",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "New",
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "edit",
+          "icon": "edit",
+          "action": "edit",
+          "expectedBehavior": "open edit flow or update selected item/state"
+        },
+        {
+          "kind": "button",
+          "label": "delete",
+          "icon": "delete",
+          "action": "destructive",
+          "expectedBehavior": "perform destructive action with visible feedback or confirmation"
+        },
+        {
+          "kind": "button",
+          "label": "Reset State",
+          "icon": "restart_alt",
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
+        },
+        {
+          "kind": "button",
+          "label": "Cancel",
+          "icon": null,
+          "action": "dismiss",
+          "expectedBehavior": "close dialog/panel or return to previous state"
+        },
+        {
+          "kind": "button",
+          "label": "Preferences",
+          "icon": "save",
+          "action": "form-submit",
+          "expectedBehavior": "validate inputs and submit/apply changes"
+        },
+        {
+          "kind": "button",
+          "label": "LedgerNest Freelancer Pro",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Freelancer Profile",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "input",
+          "label": "density",
+          "type": "radio",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "toggle1",
+          "type": "checkbox",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "toggle2",
+          "type": "checkbox",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "button",
+          "label": "LedgerNest Freelancer Pro",
+          "icon": null,
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "dashboard",
+          "icon": "dashboard",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Clients",
+          "icon": "group",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Invoices",
+          "icon": "receipt_long",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "insights",
+          "icon": "insights",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "Create New",
+          "icon": "add",
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "Freelancer Profile",
+          "icon": null,
+          "active": false
+        }
+      ],
+      "title": "Settings and Preferences - LedgerNest"
+    },
+    "ce5b64bd343c46ca8a313b6ba02201fd": {
+      "screenId": "ce5b64bd343c46ca8a313b6ba02201fd",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "nav",
+          "layout": "absolute",
+          "classes": [
+            "bg-surface",
+            "dark:bg-inverse-surface",
+            "fixed",
+            "left-0",
+            "top-0",
+            "h-full",
+            "w-[240px]",
+            "border-r",
+            "border-outline-variant",
+            "dark:border-outline"
+          ],
+          "childCount": 6
+        },
+        {
+          "tag": "header",
+          "layout": "flex-row",
+          "classes": [
+            "bg-surface",
+            "dark:bg-inverse-surface",
+            "border-b",
+            "border-outline-variant",
+            "dark:border-outline",
+            "h-16",
+            "flex",
+            "items-center",
+            "justify-between",
+            "px-xl"
+          ],
+          "childCount": 3
+        },
+        {
+          "tag": "main",
+          "layout": "flex-row",
+          "classes": [
+            "flex-1",
+            "overflow-y-auto",
+            "p-xl",
+            "flex",
+            "gap-lg",
+            "relative"
+          ],
+          "childCount": 76
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "Create New",
+          "classes": [
+            "mb-lg",
+            "w-full",
+            "bg-primary-container",
+            "text-on-primary-container",
+            "font-label-md",
+            "text-label-md",
+            "py-sm",
+            "px-md",
+            "rounded",
+            "hover:bg-primary",
+            "transition-colors",
+            "flex",
+            "items-center",
+            "justify-center",
+            "gap-xs"
+          ],
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "notifications",
+          "classes": [
+            "text-on-surface-variant",
+            "hover:text-on-surface",
+            "transition-colors",
+            "scale-95",
+            "duration-100",
+            "hover:bg-surface-container-low",
+            "p-xs",
+            "rounded-full"
+          ],
+          "icon": "notifications",
+          "action": "navigate",
+          "expectedBehavior": "navigate:/notifications",
+          "expectedRoute": "/notifications",
+          "routeInferred": true
+        },
+        {
+          "kind": "button",
+          "label": "help_outline",
+          "classes": [
+            "text-on-surface-variant",
+            "hover:text-on-surface",
+            "transition-colors",
+            "scale-95",
+            "duration-100",
+            "hover:bg-surface-container-low",
+            "p-xs",
+            "rounded-full"
+          ],
+          "icon": "help_outline",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Add Expense",
+          "classes": [
+            "bg-primary-container",
+            "text-on-primary-container",
+            "font-label-md",
+            "text-label-md",
+            "py-sm",
+            "px-md",
+            "rounded",
+            "hover:bg-primary",
+            "transition-colors",
+            "scale-95",
+            "duration-100"
+          ],
+          "icon": null,
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Retry Load",
+          "classes": [
+            "border",
+            "border-outline-variant",
+            "text-on-surface",
+            "font-label-md",
+            "text-label-md",
+            "py-[6px]",
+            "px-sm",
+            "rounded",
+            "hover:bg-surface-container-low",
+            "transition-colors",
+            "flex",
+            "items-center",
+            "gap-xs"
+          ],
+          "icon": "refresh",
+          "action": "retry",
+          "expectedBehavior": "retry the failed action and show loading/error feedback"
+        },
+        {
+          "kind": "button",
+          "label": "Create Client",
+          "classes": [
+            "bg-primary-container",
+            "text-on-primary-container",
+            "font-label-md",
+            "text-label-md",
+            "py-[6px]",
+            "px-sm",
+            "rounded",
+            "hover:bg-primary",
+            "transition-colors",
+            "flex",
+            "items-center",
+            "gap-xs"
+          ],
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Filter",
+          "classes": [
+            "flex",
+            "items-center",
+            "gap-xs",
+            "px-sm",
+            "py-[4px]",
+            "border",
+            "border-outline-variant",
+            "rounded",
+            "text-on-surface",
+            "font-label-md",
+            "text-label-md",
+            "hover:bg-surface-container-low",
+            "transition-colors"
+          ],
+          "icon": "filter_list",
+          "action": "search",
+          "expectedBehavior": "filter/search visible results from input/query"
+        },
+        {
+          "kind": "button",
+          "label": "Active",
+          "classes": [
+            "text-on-surface-variant",
+            "hover:text-on-surface",
+            "font-label-sm",
+            "text-label-sm",
+            "px-xs",
+            "py-base",
+            "rounded",
+            "hover:bg-surface-container-low",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "On Hold",
+          "classes": [
+            "text-on-surface-variant",
+            "hover:text-on-surface",
+            "font-label-sm",
+            "text-label-sm",
+            "px-xs",
+            "py-base",
+            "rounded",
+            "hover:bg-surface-container-low",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Inactive",
+          "classes": [
+            "text-on-surface-variant",
+            "hover:text-on-surface",
+            "font-label-sm",
+            "text-label-sm",
+            "px-xs",
+            "py-base",
+            "rounded",
+            "hover:bg-surface-container-low",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Edit",
+          "classes": [
+            "p-[4px]",
+            "text-on-surface-variant",
+            "hover:text-primary-container",
+            "hover:bg-primary-fixed",
+            "rounded",
+            "transition-colors"
+          ],
+          "icon": "edit",
+          "action": "edit",
+          "expectedBehavior": "open edit flow or update selected item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Delete",
+          "classes": [
+            "p-[4px]",
+            "text-on-surface-variant",
+            "hover:text-error",
+            "hover:bg-error-container",
+            "rounded",
+            "transition-colors"
+          ],
+          "icon": "delete",
+          "action": "destructive",
+          "expectedBehavior": "perform destructive action with visible feedback or confirmation"
+        },
+        {
+          "kind": "button",
+          "label": "close",
+          "classes": [
+            "text-on-surface-variant",
+            "hover:text-on-surface",
+            "p-xs",
+            "rounded",
+            "hover:bg-surface-container",
+            "transition-colors"
+          ],
+          "icon": "close",
+          "action": "dismiss",
+          "expectedBehavior": "close dialog/panel or return to previous state"
+        },
+        {
+          "kind": "button",
+          "label": "View all",
+          "classes": [
+            "text-primary-container",
+            "hover:text-primary",
+            "font-label-md",
+            "text-label-md",
+            "lowercase",
+            "normal-case"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "View Full Profile",
+          "classes": [
+            "w-full",
+            "border",
+            "border-outline-variant",
+            "text-on-surface",
+            "font-label-md",
+            "text-label-md",
+            "py-sm",
+            "px-md",
+            "rounded",
+            "hover:bg-surface-container-low",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "LedgerNest",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Freelancer Pro",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [
+        {
+          "kind": "input",
+          "type": "text",
+          "label": "Search clients, invoices...",
+          "placeholder": "Search clients, invoices...",
+          "name": "",
+          "classes": [
+            "w-full",
+            "pl-xl",
+            "pr-sm",
+            "py-xs",
+            "bg-surface-container-lowest",
+            "border",
+            "border-outline-variant",
+            "rounded",
+            "font-body-sm",
+            "text-body-sm",
+            "text-on-surface",
+            "focus:border-primary-container",
+            "focus:ring-1",
+            "focus:ring-primary-container",
+            "transition-all",
+            "outline-none"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "select",
+          "label": "select",
+          "placeholder": "",
+          "name": "",
+          "classes": [
+            "border-none",
+            "bg-transparent",
+            "font-label-md",
+            "text-label-md",
+            "text-on-surface",
+            "cursor-pointer",
+            "outline-none",
+            "p-0",
+            "pr-xl",
+            "focus:ring-0"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "dashboard",
+          "href": "#",
+          "classes": [
+            "font-body-md",
+            "text-body-md"
+          ],
+          "icon": "dashboard",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Clients",
+          "href": "#",
+          "classes": [
+            "font-body-md",
+            "text-body-md"
+          ],
+          "icon": "group",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Invoices",
+          "href": "#",
+          "classes": [
+            "font-body-md",
+            "text-body-md"
+          ],
+          "icon": "receipt_long",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "insights",
+          "href": "#",
+          "classes": [
+            "font-body-md",
+            "text-body-md"
+          ],
+          "icon": "insights",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "href": "#",
+          "classes": [
+            "font-body-md",
+            "text-body-md"
+          ],
+          "icon": "settings",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "add",
+        "dashboard",
+        "group",
+        "receipt_long",
+        "insights",
+        "settings",
+        "search",
+        "notifications",
+        "help_outline",
+        "refresh",
+        "trending_up",
+        "schedule",
+        "filter_list",
+        "edit",
+        "delete",
+        "close",
+        "mail",
+        "call",
+        "location_on"
+      ],
+      "images": [
+        {
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuCg1vPRx7M612EquWIZhRkaIz9nKMG5x-iEUETe4tPaHpbKCkW-xjyAElm3CWvt4HsKOazoqZhPGKk0-n1ME1M8lsaot9FLeDT8ihBOkoZzrl85P7o4oZOjHiQaIV8eMHKyiXAfFF7VbJK8gc1PLa",
+          "alt": "Freelancer Profile"
+        },
+        {
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuDtAOEAEtJn3PQW9jfMzfymyJE4OpYKig1MFSy8SWJsRQPpGT7hNoiBiX2b126P81vMQlQKnJA6AK-QtASdnjUxDkuhpJap-jjJihc_aD3EzOsTZrDLVxZEGvCbnC-jNozAOThbVmuyaqHcmTmomW",
+          "alt": "User Avatar"
+        }
+      ],
+      "cssVars": {},
+      "colorPalette": {
+        "error-container": "#ffdad6",
+        "surface-variant": "#e1e2ed",
+        "on-surface": "#191b23",
+        "tertiary-container": "#007d55",
+        "secondary-fixed": "#d3e4fe",
+        "surface-container-low": "#f3f3fe",
+        "secondary-container": "#d0e1fb",
+        "on-error-container": "#93000a",
+        "tertiary": "#006242",
+        "surface-bright": "#faf8ff",
+        "surface-tint": "#0053db",
+        "on-surface-variant": "#434655",
+        "on-primary-fixed": "#00174b",
+        "on-secondary-fixed": "#0b1c30",
+        "primary-container": "#2563eb",
+        "on-tertiary": "#ffffff",
+        "on-secondary": "#ffffff",
+        "tertiary-fixed-dim": "#4edea3",
+        "on-tertiary-container": "#bdffdb",
+        "primary-fixed": "#dbe1ff",
+        "on-tertiary-fixed": "#002113",
+        "outline": "#737686",
+        "inverse-on-surface": "#f0f0fb",
+        "primary": "#004ac6",
+        "secondary-fixed-dim": "#b7c8e1",
+        "surface-dim": "#d9d9e5",
+        "primary-fixed-dim": "#b4c5ff",
+        "outline-variant": "#c3c6d7",
+        "surface-container-high": "#e7e7f3",
+        "on-secondary-fixed-variant": "#38485d",
+        "on-background": "#191b23",
+        "error": "#ba1a1a",
+        "background": "#faf8ff",
+        "on-primary-container": "#eeefff",
+        "tertiary-fixed": "#6ffbbe",
+        "surface-container-lowest": "#ffffff",
+        "on-tertiary-fixed-variant": "#005236",
+        "on-primary-fixed-variant": "#003ea8",
+        "secondary": "#505f76",
+        "surface-container": "#ededf9",
+        "on-primary": "#ffffff",
+        "inverse-primary": "#b4c5ff",
+        "inverse-surface": "#2e3039",
+        "surface-container-highest": "#e1e2ed",
+        "on-error": "#ffffff",
+        "on-secondary-container": "#54647a",
+        "surface": "#faf8ff"
+      },
+      "fonts": [
+        "Inter",
+        "Material Symbols Outlined"
+      ],
+      "layoutHints": {
+        "gridCols": 1,
+        "flexDirection": "col"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "dashboard",
+          "icon": "dashboard",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Clients",
+          "icon": "group",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Invoices",
+          "icon": "receipt_long",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "insights",
+          "icon": "insights",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "Create New",
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "notifications",
+          "icon": "notifications",
+          "action": "navigate",
+          "route": "/notifications",
+          "expectedBehavior": "navigate:/notifications"
+        },
+        {
+          "kind": "button",
+          "label": "help_outline",
+          "icon": "help_outline",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Add Expense",
+          "icon": null,
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Retry Load",
+          "icon": "refresh",
+          "action": "retry",
+          "expectedBehavior": "retry the failed action and show loading/error feedback"
+        },
+        {
+          "kind": "button",
+          "label": "Create Client",
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Filter",
+          "icon": "filter_list",
+          "action": "search",
+          "expectedBehavior": "filter/search visible results from input/query"
+        },
+        {
+          "kind": "button",
+          "label": "Active",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "On Hold",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Inactive",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Edit",
+          "icon": "edit",
+          "action": "edit",
+          "expectedBehavior": "open edit flow or update selected item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Delete",
+          "icon": "delete",
+          "action": "destructive",
+          "expectedBehavior": "perform destructive action with visible feedback or confirmation"
+        },
+        {
+          "kind": "button",
+          "label": "close",
+          "icon": "close",
+          "action": "dismiss",
+          "expectedBehavior": "close dialog/panel or return to previous state"
+        },
+        {
+          "kind": "button",
+          "label": "View all",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "View Full Profile",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "LedgerNest",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Freelancer Pro",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "input",
+          "label": "Search clients, invoices...",
+          "type": "text",
+          "placeholder": "Search clients, invoices...",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "select",
+          "type": "select",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "button",
+          "label": "LedgerNest",
+          "icon": null,
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "Freelancer Pro",
+          "icon": null,
+          "active": false
+        },
+        {
+          "kind": "button",
+          "label": "LedgerNest",
+          "icon": null,
+          "active": false
+        },
+        {
+          "kind": "button",
+          "label": "Create New",
+          "icon": "add",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "dashboard",
+          "icon": "dashboard",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Clients",
+          "icon": "group",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Invoices",
+          "icon": "receipt_long",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "insights",
+          "icon": "insights",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "active": true
+        }
+      ],
+      "title": "Client Operations - LedgerNest"
+    }
+  }
+}

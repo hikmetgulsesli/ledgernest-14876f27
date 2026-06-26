@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Settings and Preferences - LedgerNest</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#e1e2ed",
+                        "on-surface": "#191b23",
+                        "tertiary-container": "#007d55",
+                        "secondary-fixed": "#d3e4fe",
+                        "surface-container-low": "#f3f3fe",
+                        "secondary-container": "#d0e1fb",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#006242",
+                        "surface-bright": "#faf8ff",
+                        "surface-tint": "#0053db",
+                        "on-surface-variant": "#434655",
+                        "on-primary-fixed": "#00174b",
+                        "on-secondary-fixed": "#0b1c30",
+                        "primary-container": "#2563eb",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed-dim": "#4edea3",
+                        "on-tertiary-container": "#bdffdb",
+                        "primary-fixed": "#dbe1ff",
+                        "on-tertiary-fixed": "#002113",
+                        "outline": "#737686",
+                        "inverse-on-surface": "#f0f0fb",
+                        "primary": "#004ac6",
+                        "secondary-fixed-dim": "#b7c8e1",
+                        "surface-dim": "#d9d9e5",
+                        "primary-fixed-dim": "#b4c5ff",
+                        "outline-variant": "#c3c6d7",
+                        "surface-container-high": "#e7e7f3",
+                        "on-secondary-fixed-variant": "#38485d",
+                        "on-background": "#191b23",
+                        "error": "#ba1a1a",
+                        "background": "#faf8ff",
+                        "on-primary-container": "#eeefff",
+                        "tertiary-fixed": "#6ffbbe",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed-variant": "#005236",
+                        "on-primary-fixed-variant": "#003ea8",
+                        "secondary": "#505f76",
+                        "surface-container": "#ededf9",
+                        "on-primary": "#ffffff",
+                        "inverse-primary": "#b4c5ff",
+                        "inverse-surface": "#2e3039",
+                        "surface-container-highest": "#e1e2ed",
+                        "on-error": "#ffffff",
+                        "on-secondary-container": "#54647a",
+                        "surface": "#faf8ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "sm": "8px",
+                        "base": "4px",
+                        "xl": "32px",
+                        "margin-desktop": "32px",
+                        "gutter": "16px",
+                        "xs": "4px",
+                        "margin-mobile": "16px",
+                        "lg": "24px",
+                        "md": "16px",
+                        "max-width": "1440px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "display-sm": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "label-md": ["Inter"],
+                        "title-lg": ["Inter"],
+                        "headline-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "display-sm": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }],
+                        "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-sm": ["11px", { "lineHeight": "14px", "fontWeight": "600" }],
+                        "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+                        "title-lg": ["18px", { "lineHeight": "28px", "fontWeight": "500" }],
+                        "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        .glass-panel { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.3); }
+        .bento-card { background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 0.5rem; }
+        .toggle-checkbox:checked { right: 0; border-color: #2563eb; }
+        .toggle-checkbox:checked + .toggle-label { background-color: #2563eb; }
+        .toggle-checkbox { right: 0; z-index: 1; border-color: #e2e8f0; transition: all 0.3s; }
+        .toggle-label { width: 36px; height: 20px; background-color: #e2e8f0; border-radius: 9999px; position: relative; cursor: pointer; transition: all 0.3s; }
+        .toggle-label:after { content: ''; position: absolute; top: 2px; left: 2px; width: 16px; height: 16px; background-color: white; border-radius: 50%; transition: all 0.3s; }
+        .toggle-checkbox:checked + .toggle-label:after { transform: translateX(16px); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface h-screen overflow-hidden flex">
+<!-- SideNavBar -->
+<nav class="bg-surface dark:bg-inverse-surface fixed left-0 top-0 h-full w-[240px] border-r border-outline-variant dark:border-outline flex flex-col h-full py-lg px-md z-20 hidden md:flex">
+<div class="mb-xl">
+<h1 class="font-headline-lg text-headline-lg text-primary dark:text-inverse-primary font-bold">LedgerNest</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-xs">Freelancer Pro</p>
+</div>
+<div class="flex flex-col gap-sm flex-grow">
+<!-- Navigation Items -->
+<a class="flex items-center gap-md px-sm py-sm rounded text-on-surface-variant dark:text-surface-variant hover:bg-surface-container dark:hover:bg-surface-container-high transition-colors cursor-pointer active:opacity-80" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">dashboard</span>
+<span class="font-body-md text-body-md">Dashboard</span>
+</a>
+<a class="flex items-center gap-md px-sm py-sm rounded text-on-surface-variant dark:text-surface-variant hover:bg-surface-container dark:hover:bg-surface-container-high transition-colors cursor-pointer active:opacity-80" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">group</span>
+<span class="font-body-md text-body-md">Clients</span>
+</a>
+<a class="flex items-center gap-md px-sm py-sm rounded text-on-surface-variant dark:text-surface-variant hover:bg-surface-container dark:hover:bg-surface-container-high transition-colors cursor-pointer active:opacity-80" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">receipt_long</span>
+<span class="font-body-md text-body-md">Invoices</span>
+</a>
+<a class="flex items-center gap-md px-sm py-sm rounded text-on-surface-variant dark:text-surface-variant hover:bg-surface-container dark:hover:bg-surface-container-high transition-colors cursor-pointer active:opacity-80" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">insights</span>
+<span class="font-body-md text-body-md">Insights</span>
+</a>
+<a class="flex items-center gap-md px-sm py-sm rounded text-primary dark:text-inverse-primary font-bold border-r-2 border-primary bg-surface-container-low cursor-pointer active:opacity-80" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">settings</span>
+<span class="font-body-md text-body-md">Settings</span>
+</a>
+</div>
+<div class="mt-auto pt-lg border-t border-outline-variant dark:border-outline">
+<button class="w-full bg-primary-container text-on-primary-container font-label-md text-label-md py-sm rounded flex items-center justify-center gap-xs hover:bg-primary transition-colors hover:text-white">
+<span class="material-symbols-outlined text-[18px]">add</span>
+                Create New
+            </button>
+<div class="mt-md flex items-center gap-sm">
+<img class="w-8 h-8 rounded-full object-cover border border-outline-variant" data-alt="A small, professional avatar placeholder image for a freelancer profile, clean modern aesthetic, light mode compatible." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDndFZc_u_5cYXR7UP9wF4NdpI4O6_y7nxt_UNRBqXPzcmPDKwhsFEWxxTWu94AtXP3kHRXZuWIvkzmSzZR9R6h3PT629o-gen-2M72CK69MWvNEy_nOmtND0LIG8R_BpVxq2vpdIztkGygRUSk8rxinOHIl3-NTzTkCBwmfQwlRNR1DHuaGLr9ilg9EOrRrolAlsXOAOSkHIS-CJx8Zh9GQj-FQEk_F8uTeRFsQxN1YMsuA3yNz3ynSMGBYInrY-aUuwy8i6w431Ug"/>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Freelancer Profile</span>
+</div>
+</div>
+</nav>
+<!-- TopNavBar for Mobile -->
+<div class="md:hidden fixed top-0 w-full bg-surface border-b border-outline-variant h-16 flex items-center justify-between px-md z-20">
+<h1 class="font-headline-md text-headline-md text-primary font-bold">LedgerNest</h1>
+<span class="material-symbols-outlined text-primary cursor-pointer">menu</span>
+</div>
+<!-- Main Content Area -->
+<main class="flex-1 ml-0 md:ml-[240px] pt-16 md:pt-0 h-full overflow-y-auto bg-[#f8fafc] relative">
+<!-- Top App Bar (Desktop Context) -->
+<header class="hidden md:flex sticky top-0 bg-surface/90 backdrop-blur-sm z-10 h-16 border-b border-outline-variant items-center justify-between px-xl w-full">
+<div class="font-headline-md text-headline-md text-primary font-bold">Settings &amp; Preferences</div>
+<div class="flex items-center gap-md">
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer transition-colors">notifications</span>
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer transition-colors">help_outline</span>
+<button class="bg-primary text-white font-label-md text-label-md px-md py-[6px] rounded hover:bg-blue-700 transition-colors">Add Expense</button>
+</div>
+</header>
+<div class="p-margin-mobile md:p-margin-desktop max-w-[1024px] mx-auto pb-24">
+<!-- Settings Tabs -->
+<div class="flex overflow-x-auto border-b border-outline-variant mb-lg hide-scrollbar">
+<button class="px-md py-sm font-label-md text-label-md text-primary border-b-2 border-primary whitespace-nowrap">Workflow</button>
+<button class="px-md py-sm font-label-md text-label-md text-on-surface-variant hover:text-primary whitespace-nowrap transition-colors">Saved Filters</button>
+<button class="px-md py-sm font-label-md text-label-md text-on-surface-variant hover:text-primary whitespace-nowrap transition-colors">Notifications</button>
+<button class="px-md py-sm font-label-md text-label-md text-on-surface-variant hover:text-error whitespace-nowrap transition-colors">Data Reset</button>
+</div>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Workflow Preferences -->
+<section class="md:col-span-8 bento-card p-lg flex flex-col gap-md">
+<h2 class="font-title-lg text-title-lg text-on-surface flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary">view_quilt</span>
+                        Workflow Environment
+                    </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-sm">Customize how your data is presented and how dense the information density should be.</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-md mt-sm">
+<!-- Default View Toggle -->
+<div class="border border-outline-variant rounded p-md hover:bg-surface-container-lowest transition-colors group">
+<h3 class="font-label-md text-label-md text-on-surface mb-xs">Default Operations View</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-md">Choose your preferred layout for main dashboards.</p>
+<div class="flex items-center gap-sm bg-surface-container-low p-xs rounded w-fit">
+<button class="flex items-center gap-xs px-sm py-xs rounded bg-white shadow-sm font-label-sm text-label-sm text-primary">
+<span class="material-symbols-outlined text-[16px]">list</span> List
+                                </button>
+<button class="flex items-center gap-xs px-sm py-xs rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[16px]">space_dashboard</span> Board
+                                </button>
+</div>
+</div>
+<!-- Data Density Radio -->
+<div class="border border-outline-variant rounded p-md hover:bg-surface-container-lowest transition-colors">
+<h3 class="font-label-md text-label-md text-on-surface mb-xs">Data Density</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-md">Adjust table row height and spacing.</p>
+<div class="flex flex-col gap-sm">
+<label class="flex items-center gap-sm cursor-pointer group">
+<input class="form-radio text-primary focus:ring-primary h-4 w-4 border-outline-variant" name="density" type="radio"/>
+<span class="font-body-md text-body-md text-on-surface group-hover:text-primary transition-colors">Comfortable</span>
+</label>
+<label class="flex items-center gap-sm cursor-pointer group">
+<input checked="" class="form-radio text-primary focus:ring-primary h-4 w-4 border-outline-variant" name="density" type="radio"/>
+<span class="font-body-md text-body-md text-on-surface group-hover:text-primary transition-colors">Compact</span>
+<span class="bg-surface-container-high text-on-surface-variant px-xs py-[2px] rounded text-[10px] uppercase font-bold ml-auto">Active</span>
+</label>
+</div>
+</div>
+</div>
+</section>
+<!-- Notifications -->
+<section class="md:col-span-4 bento-card p-lg flex flex-col gap-md">
+<h2 class="font-title-lg text-title-lg text-on-surface flex items-center gap-sm border-b border-surface-variant pb-sm">
+<span class="material-symbols-outlined text-secondary">notifications_active</span>
+                        Alerts
+                    </h2>
+<div class="flex flex-col gap-md mt-sm">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-label-md text-label-md text-on-surface">Payment Reminders</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Upcoming invoice alerts.</p>
+</div>
+<div class="relative inline-block w-9 align-middle select-none transition duration-200 ease-in">
+<input class="toggle-checkbox absolute block w-4 h-4 rounded-full bg-white border-4 appearance-none cursor-pointer opacity-0" id="toggle1" name="toggle1" type="checkbox"/>
+<label class="toggle-label block overflow-hidden h-5 rounded-full bg-gray-300 cursor-pointer" for="toggle1"></label>
+</div>
+</div>
+<div class="h-[1px] bg-surface-variant w-full"></div>
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-label-md text-label-md text-on-surface">Overdue Alerts</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Immediate notifications.</p>
+</div>
+<div class="relative inline-block w-9 align-middle select-none transition duration-200 ease-in">
+<input checked="" class="toggle-checkbox absolute block w-4 h-4 rounded-full bg-white border-4 appearance-none cursor-pointer opacity-0" id="toggle2" name="toggle2" type="checkbox"/>
+<label class="toggle-label block overflow-hidden h-5 rounded-full bg-gray-300 cursor-pointer" for="toggle2"></label>
+</div>
+</div>
+</div>
+</section>
+<!-- Saved Filters List -->
+<section class="md:col-span-12 bento-card p-lg flex flex-col gap-md">
+<div class="flex items-center justify-between border-b border-surface-variant pb-sm">
+<h2 class="font-title-lg text-title-lg text-on-surface flex items-center gap-sm">
+<span class="material-symbols-outlined text-tertiary">filter_list</span>
+                            Saved Filters
+                        </h2>
+<button class="text-primary font-label-md text-label-md flex items-center gap-xs hover:underline">
+<span class="material-symbols-outlined text-[16px]">add</span> New
+                        </button>
+</div>
+<div class="flex flex-col">
+<!-- Filter Item 1 -->
+<div class="flex items-center justify-between py-sm border-b border-surface-container-high hover:bg-[#f1f5f9] transition-colors px-xs group">
+<div class="flex items-center gap-md">
+<span class="material-symbols-outlined text-outline-variant">label</span>
+<div>
+<span class="font-body-md text-body-md text-on-surface font-medium">Overdue &gt; $1,000</span>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Applied to: Invoices</div>
+</div>
+</div>
+<div class="flex items-center gap-sm opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="text-secondary hover:text-primary transition-colors p-xs rounded hover:bg-surface-container"><span class="material-symbols-outlined text-[18px]">edit</span></button>
+<button class="text-secondary hover:text-error transition-colors p-xs rounded hover:bg-error-container/30"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</div>
+<!-- Filter Item 2 -->
+<div class="flex items-center justify-between py-sm border-b border-surface-container-high hover:bg-[#f1f5f9] transition-colors px-xs group">
+<div class="flex items-center gap-md">
+<span class="material-symbols-outlined text-outline-variant">label</span>
+<div>
+<span class="font-body-md text-body-md text-on-surface font-medium">Drafts (This Month)</span>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Applied to: All Operations</div>
+</div>
+</div>
+<div class="flex items-center gap-sm opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="text-secondary hover:text-primary transition-colors p-xs rounded hover:bg-surface-container"><span class="material-symbols-outlined text-[18px]">edit</span></button>
+<button class="text-secondary hover:text-error transition-colors p-xs rounded hover:bg-error-container/30"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</div>
+</div>
+</section>
+<!-- Danger Zone -->
+<section class="md:col-span-12 border border-error-container bg-[#fff5f5] rounded-xl p-lg flex flex-col md:flex-row items-start md:items-center justify-between gap-md mt-md">
+<div>
+<h2 class="font-title-lg text-title-lg text-error flex items-center gap-sm mb-xs">
+<span class="material-symbols-outlined">warning</span>
+                            Danger Zone
+                        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+                            Reset Application State. This will clear local cache and return all UI preferences to default. It will not delete your financial data.
+                        </p>
+</div>
+<button class="bg-white border border-error text-error font-label-md text-label-md px-md py-sm rounded hover:bg-error hover:text-white transition-colors flex items-center gap-xs whitespace-nowrap">
+<span class="material-symbols-outlined text-[18px]">restart_alt</span>
+                        Reset State
+                    </button>
+</section>
+</div> <!-- End Grid -->
+</div>
+<!-- Sticky Footer for Actions -->
+<div class="fixed bottom-0 left-0 md:left-[240px] right-0 bg-surface/90 backdrop-blur-md border-t border-outline-variant p-md flex items-center justify-between z-30">
+<!-- Toast (Hidden by default, shown for demonstration) -->
+<div class="hidden md:flex items-center gap-sm bg-[#ecfdf5] text-[#065f46] px-md py-xs rounded border border-[#a7f3d0] font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+                Settings saved successfully
+            </div>
+<div class="flex items-center gap-md ml-auto">
+<button class="text-on-surface-variant hover:text-on-surface font-label-md text-label-md px-md py-xs transition-colors">Cancel</button>
+<button class="bg-primary text-white font-label-md text-label-md px-lg py-sm rounded shadow-sm hover:bg-blue-700 hover:shadow transition-all flex items-center gap-xs">
+<span class="material-symbols-outlined text-[18px]">save</span>
+                    Save Preferences
+                </button>
+</div>
+</div>
+</main>
+<!-- Optional subtle background decoration -->
+<div class="fixed inset-0 pointer-events-none opacity-5 z-0 bg-cover bg-center" data-alt="A very subtle, light, abstract geometric pattern background with soft blues and grays, modern clean aesthetic, low opacity." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDhUoA2h5AJC_yjMyITzPWKAMce9ZDoMQzKja-3WydI86DCctRMscyQPA0TbLnYxZx6B939wZEnR5AhmpmxPpP_DwDYsmfDQc7cdltWYt2JX3s3wQQD4LviCu4aK-x4rKEcxv44UdJB72ut4JTYp4MsjYonlkac5dYQwcZckMhNnE-SEH5oCP3paeir81KovaCNms425eVr3ri0Oq_tWYf0CGAVacYkmxFqv_2zIHZPPJD575cKfwuRFN2zgyX1lze5Vx76fPiSCza7')"></div>
+<script>
+        // Simple script to toggle toast visibility for demo
+        document.querySelector('button:last-child').addEventListener('click', function() {
+            const toast = document.querySelector('.bg-\\[\\#ecfdf5\\]');
+            if(toast) {
+                toast.classList.remove('hidden');
+                setTimeout(() => toast.classList.add('hidden'), 3000);
+            }
+        });
+    </script>
+</body></html>

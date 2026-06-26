@@ -1,0 +1,38 @@
+[
+  {
+    "screenId": "312505334abc4c858faf55476d8c1960",
+    "name": "Client Editor - LedgerNest",
+    "type": "form",
+    "description": "Client Editor - LedgerNest screen",
+    "surfaceIds": [
+      "SURF_CLIENT_EDITOR"
+    ]
+  },
+  {
+    "screenId": "721fa6fb775a480783d377c73a81387c",
+    "name": "Insights - LedgerNest",
+    "type": "app-screen",
+    "description": "Insights - LedgerNest screen",
+    "surfaceIds": [
+      "SURF_INSIGHTS"
+    ]
+  },
+  {
+    "screenId": "bbe760baf67d49b6beb63349238063ab",
+    "name": "Settings and Preferences - LedgerNest",
+    "type": "settings",
+    "description": "Settings and Preferences - LedgerNest screen",
+    "surfaceIds": [
+      "SURF_SETTINGS_AND_PREFERENCES"
+    ]
+  },
+  {
+    "screenId": "ce5b64bd343c46ca8a313b6ba02201fd",
+    "name": "Client Operations - LedgerNest",
+    "type": "app-screen",
+    "description": "Client Operations - LedgerNest screen",
+    "surfaceIds": [
+      "SURF_CLIENT_OPERATIONS"
+    ]
+  }
+]
