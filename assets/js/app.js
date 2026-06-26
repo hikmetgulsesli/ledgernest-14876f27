@@ -122,7 +122,7 @@ window.setfarmStaticReady = true;
         window.LedgerState.setUi({ expenseModalOpen: false, helpOpen: false, notificationsOpen: false });
         break;
       case 'ACT_SELECT_RECORD':
-        if (id) window.LedgerState.selectClient(id);
+        window.LedgerState.selectClient(id);
         break;
       case 'ACT_FILTER_STATUS':
         if (value) window.LedgerState.setStatusFilter(value);
@@ -270,6 +270,11 @@ window.setfarmStaticReady = true;
     if (result.ok) {
       window.LedgerState.setUi({ expenseModalOpen: false });
       showToast('Expense added');
+    } else {
+      var messages = [];
+      if (result.errors && result.errors.description) messages.push(result.errors.description);
+      if (result.errors && result.errors.amount) messages.push(result.errors.amount);
+      showToast(messages.join(' ') || 'Could not save expense.');
     }
   }
 
@@ -289,8 +294,37 @@ window.setfarmStaticReady = true;
 
   function render() {
     if (!currentState) return;
+    var focus = captureFocus();
     headerEl.innerHTML = renderHeader(currentState);
     mainEl.innerHTML = renderMain(currentState);
+    restoreFocus(focus);
+  }
+
+  function captureFocus() {
+    var active = document.activeElement;
+    if (!active) return null;
+    return {
+      id: active.id || null,
+      name: active.name || null,
+      selectionStart: typeof active.selectionStart === 'number' ? active.selectionStart : null,
+      selectionEnd: typeof active.selectionEnd === 'number' ? active.selectionEnd : null,
+      selectionDirection: active.selectionDirection || null
+    };
+  }
+
+  function restoreFocus(focus) {
+    if (!focus) return;
+    var el = null;
+    if (focus.id) el = document.getElementById(focus.id);
+    if (!el && focus.name) {
+      var byName = document.getElementsByName(focus.name);
+      if (byName.length) el = byName[0];
+    }
+    if (!el) return;
+    el.focus();
+    if (typeof el.setSelectionRange === 'function' && focus.selectionStart !== null) {
+      el.setSelectionRange(focus.selectionStart, focus.selectionEnd, focus.selectionDirection || undefined);
+    }
   }
 
   function renderHeader(state) {
@@ -619,7 +653,7 @@ window.setfarmStaticReady = true;
       '<label class="field-label">Amount</label>' +
       '<input type="number" name="amount" step="0.01" placeholder="0.00" />' +
       '<label class="field-label">Date</label>' +
-      '<input type="date" name="date" value="' + new Date().toISOString().slice(0, 10) + '" />' +
+      '<input type="date" name="date" value="' + (function () { var d = new Date(); return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); })() + '" />' +
       '<label class="field-label">Category</label>' +
       '<input type="text" name="category" placeholder="general" />' +
       '<div class="form-actions">' +

@@ -331,6 +331,7 @@ window.LedgerState = (function () {
     var errors = validateClient(updated);
     if (Object.keys(errors).length > 0) {
       state.ui.validationErrors = errors;
+      state.ui.editingClient = updated;
       notify();
       return { ok: false, errors: errors };
     }
